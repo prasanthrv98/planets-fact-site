@@ -1,0 +1,44 @@
+.img-box {
+  position: relative;
+  min-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-planet {
+  display: block;
+  margin: 0 auto;
+  width: 65%;
+}
+
+.img-geology {
+  position: absolute;
+  width: 25%;
+  height: 35%;
+  bottom: -3rem;
+}
+
+@media (max-width: 64.3em) {
+  .img-planet {
+    width: 50%;
+  }
+
+  .img-geology {
+    width: 17%;
+    height: 38%;
+    bottom: -5rem;
+  }
+}
+
+@media (max-width: 42.8em) {
+  .img-planet {
+    width: 65%;
+  }
+
+  .img-geology {
+    width: 20%;
+    height: 35%;
+    bottom: -2rem;
+  }
+}

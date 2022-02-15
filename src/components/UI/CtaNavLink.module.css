@@ -1,0 +1,58 @@
+.cta-nav-link {
+  display: none;
+}
+
+@media (max-width: 42.8em) {
+  .cta-nav-link {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .cta-link:link,
+  .cta-link:visited {
+    position: relative;
+    font-size: 9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 2rem 0;
+  }
+
+  .cta-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+  }
+
+  .active.mercury::after {
+    background-color: var(--color-mercury);
+  }
+
+  .active.venus::after {
+    background-color: var(--color-venus);
+  }
+
+  .active.earth::after {
+    background-color: var(--color-earth);
+  }
+  .active.mars::after {
+    background-color: var(--color-mars);
+  }
+  .active.jupiter::after {
+    background-color: var(--color-jupiter);
+  }
+  .active.saturn::after {
+    background-color: var(--color-saturn);
+  }
+
+  .active.uranus::after {
+    background-color: var(--color-uranus);
+  }
+  .active.neptune::after {
+    background-color: var(--color-neptune);
+  }
+}

@@ -1,0 +1,45 @@
+.sidebar-nav {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 0;
+  background-color: var(--main-bg);
+  z-index: 100;
+  /* display: none; */
+}
+
+.sidebar-nav ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.sidebar-nav li:not(:last-child) {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar-nav li {
+  display: flex;
+  align-items: center;
+  gap: 2.1rem;
+  padding: 1.65rem;
+}
+
+.label {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+.sidebar-nav a {
+  font-family: "Spartan";
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 1.36px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.chevron-icon {
+  margin-left: auto;
+}

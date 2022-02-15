@@ -1,0 +1,9 @@
+.ham-icon__box {
+  display: none;
+}
+
+@media (max-width: 42.8em) {
+  .ham-icon__box {
+    display: inline-block;
+  }
+}

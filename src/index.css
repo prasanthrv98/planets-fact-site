@@ -1,0 +1,122 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=Spartan:wght@400;700&display=swap");
+
+/* VARIABLES   */
+:root {
+  --main-bg: #070724;
+  --text-light: #838391;
+  --text-dark: #38384f;
+  --color-mercury: #419ebb;
+  --color-venus: #eda249;
+  --color-earth: #6f2ed6;
+  --color-mars: #d14c32;
+  --color-jupiter: #d83a34;
+  --color-saturn: #cd5120;
+  --color-uranus: #1ec2a4;
+  --color-neptune: #2d68f0;
+}
+
+/* Base Values */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* 1rem equal to 14px */
+  font-size: 87.5%;
+}
+
+/* TYPOGRAPHY */
+body {
+  font-size: 1rem;
+  color: white;
+  background-color: var(--main-bg);
+  background-image: url("./assets/images/background-stars.svg");
+  font-family: "Spartan", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.heading-primary,
+.heading-secondary {
+  font-family: "Antonio", sans-serif;
+  text-transform: uppercase;
+}
+
+.heading-primary {
+  font-size: 5.71rem;
+}
+
+.heading-secondary {
+  font-size: 2.85rem;
+  letter-spacing: -1.5px;
+}
+
+.heading-tertiary,
+.heading-fourth {
+  font-family: "spartan";
+  font-weight: 700;
+}
+
+.heading-tertiary {
+  font-size: 0.85rem;
+  letter-spacing: 2.6px;
+}
+
+.heading-fourth {
+  font-size: 0.78rem;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 64.3em) {
+  .heading-primary {
+    font-size: 3.4em;
+  }
+
+  .heading-secondary {
+    font-size: 1.75em;
+    letter-spacing: -0.9px;
+  }
+}
+
+@media (max-width: 42.8em) {
+  .heading-primary {
+    font-size: 2.5em;
+  }
+}
+/* BG - COLORS */
+
+.bg-mercury {
+  background-color: var(--color-mercury);
+}
+.bg-venus {
+  background-color: var(--color-venus);
+}
+.bg-earth {
+  background-color: var(--color-earth);
+}
+.bg-mars {
+  background-color: var(--color-mars);
+}
+.bg-jupiter {
+  background-color: var(--color-jupiter);
+}
+.bg-saturn {
+  background-color: var(--color-saturn);
+}
+.bg-uranus {
+  background-color: var(--color-uranus);
+}
+.bg-neptune {
+  background-color: var(--color-neptune);
+}
+
+/* MEDIA QURIES */
+
+/* TABLET - 1028px ->  64.3em*/
+
+/* Mobile - 685px ->  42.8em*/
